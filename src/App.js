@@ -22,8 +22,11 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
-        <form onSubmit={this.handleSubmit}>
+      <div className="grid--3x3">
+        <form
+          className="box--center flex flex--column"
+          onSubmit={this.handleSubmit}
+        >
           <label>We love mail ✨</label>
           <input
             name="name"
