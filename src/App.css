@@ -35,6 +35,10 @@
   padding: 20px
 }
 
+.borders--round {
+  border-radius: 1%;
+}
+
 label {
   margin: 10px;
 }
