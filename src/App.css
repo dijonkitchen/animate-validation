@@ -39,6 +39,16 @@
   border-radius: 1%;
 }
 
+.button {
+  padding: 0;
+  width: 100px;
+  height: 25px;
+  border-width: 1px;
+  border-radius: 30px;
+  border-color: lightgray;
+  color: lightgray;
+}
+
 label {
   margin: 10px;
 }

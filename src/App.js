@@ -53,6 +53,7 @@ class App extends Component {
             onChange={this.handleChange}
           />
           <input
+            className="button"
             type="submit"
             value="SEND"
           />
