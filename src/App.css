@@ -2,6 +2,10 @@
   background-color: orange;
 }
 
+.bg--white {
+  background-color: white;
+}
+
 .grid--3x3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

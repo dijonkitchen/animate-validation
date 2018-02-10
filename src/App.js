@@ -24,7 +24,7 @@ class App extends Component {
     return (
       <div className="grid--3x3">
         <form
-          className="box--center flex flex--column"
+          className="box--center flex flex--column bg--white"
           onSubmit={this.handleSubmit}
         >
           <label>We love mail ✨</label>
