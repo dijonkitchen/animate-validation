@@ -31,6 +31,10 @@
   font-weight: bold;
 }
 
+.padding--med {
+  padding: 20px
+}
+
 label {
   margin: 10px;
 }
