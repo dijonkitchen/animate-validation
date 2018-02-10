@@ -27,6 +27,10 @@
   flex-direction: column;
 }
 
+.bold {
+  font-weight: bold;
+}
+
 label {
   margin: 10px;
 }
@@ -36,4 +40,3 @@ input {
   margin: 10px;
   border-width: 0 0 1px 0;
 }
-
