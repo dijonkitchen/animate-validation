@@ -29,6 +29,7 @@ class App extends Component {
         >
           <label>We love mail ✨</label>
           <input
+            required
             className="bold"
             name="name"
             type="text"
@@ -37,6 +38,7 @@ class App extends Component {
             onChange={this.handleChange}
           />
           <input
+            required
             className="bold"
             name="email"
             type="email"
@@ -45,6 +47,7 @@ class App extends Component {
             onChange={this.handleChange}
           />
           <input
+            required
             className="bold"
             name="message"
             type="text"
