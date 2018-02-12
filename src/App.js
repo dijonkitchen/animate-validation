@@ -58,7 +58,6 @@ class App extends Component {
           <label>We love mail ✨</label>
           <input
             required
-            className="bold"
             name="name"
             type="text"
             placeholder="Name"
@@ -67,7 +66,6 @@ class App extends Component {
           />
           <input
             required
-            className="bold"
             name="email"
             type="email"
             placeholder="mail"
@@ -76,7 +74,6 @@ class App extends Component {
           />
           <input
             required
-            className="bold"
             name="message"
             type="text"
             placeholder="message"
