@@ -7,20 +7,48 @@ class App extends Component {
     this.state = {
       name: '',
       email: '',
-      message: ''
+      message: '',
+      validFields: 0
     }
   }
 
   handleChange = (event) =>
     this.setState({
       [event.target.name]: event.target.value
-    })
+    }, this.handleValidations)
+
+  handleValidations = () => {
+    let validFields = 0
+
+    if (this.state.name) {
+      validFields += 1
+    }
+    if (this.state.email) {
+      validFields += 1
+    }
+    if (this.state.message) {
+      validFields += 1
+    }
+
+    this.setState({ validFields })
+  }
 
   handleSubmit = () => {
     // no-op for example
   }
 
   render() {
+    let buttonClasses = 'button '
+    if (this.state.validFields >= 1) {
+      buttonClasses += 'validation-1 '
+    }
+    if (this.state.validFields >= 2) {
+      buttonClasses += 'validation-2 '
+    }
+    if (this.state.validFields >= 3) {
+      buttonClasses += 'validation-3'
+    }
+
     return (
       <div className="grid--3x3">
         <form
@@ -55,11 +83,12 @@ class App extends Component {
             value={this.state.message}
             onChange={this.handleChange}
           />
-          <input
-            className="button"
+          <button
+            className={buttonClasses}
             type="submit"
-            value="SEND"
-          />
+          >
+            SEND
+          </button>
         </form>
       </div>
     );

@@ -43,16 +43,6 @@
   box-shadow: 0px 0px 10px darkgrey;
 }
 
-.button {
-  padding: 0;
-  width: 100px;
-  height: 25px;
-  border-width: 1px;
-  border-radius: 30px;
-  border-color: lightgray;
-  color: lightgray;
-}
-
 label {
   margin: 10px;
 }
@@ -61,4 +51,38 @@ input {
   padding: 10px;
   margin: 10px;
   border-width: 0 0 1px 0;
+}
+
+.button {
+  margin: 1em;
+  width: 100px;
+  height: 25px;
+  border-radius: 30px;
+  color: lightgray;
+  position: relative;
+}
+
+.validation-1 {
+  border-bottom-color: darkorange;
+  transition: 0.25s;
+}
+
+.validation-2 {
+  border-right-color: darkorange;
+  transition: 0.25s;
+}
+
+.validation-3 {
+  border-top-color: darkorange;
+  border-left-color: darkorange;
+  color: white;
+  background: radial-gradient(darkorange, white, 200%);
+  background-color: darkorange;
+
+  transition:
+    border-top-color 0.25s 0.25s,
+    border-left-color 0.25s 0.50s,
+    background 0.25s 0.75s,
+    background-color 0.25s 0.75s,
+    color 0.25s 0.75s;
 }
