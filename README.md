@@ -25,6 +25,7 @@ brew install yarn
 ### Installing
 
 ```sh
+yarn install
 yarn start
 ```
 
